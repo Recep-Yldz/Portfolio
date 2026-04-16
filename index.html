@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RECEP YILDIZ | SYSTEM.INIT</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Custom Cursor -->
+    <div id="cursor-dot"></div>
+    <div id="cursor-ring"></div>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader-text" id="loader-text">Initializing System...</div>
+        <div class="loader-bar">
+            <div class="loader-progress" id="loader-progress"></div>
+        </div>
+    </div>
+
+    <!-- Interactive Network Background -->
+    <canvas id="network-canvas"></canvas>
+    <div class="vignette"></div>
+
+    <!-- Side Navigation -->
+    <nav>
+        <a href="#home" class="nav-dot active" data-label="SYS.HOME"></a>
+        <a href="#about" class="nav-dot" data-label="SYS.PROFILE"></a>
+        <a href="#skills" class="nav-dot" data-label="SYS.SKILLS"></a>
+        <a href="#projects" class="nav-dot" data-label="SYS.PROJECTS"></a>
+        <a href="#contact" class="nav-dot" data-label="SYS.CONTACT"></a>
+    </nav>
+
+    <!-- SECTION 1: HERO -->
+    <section id="home" class="section">
+        <div>
+            <div class="subtitle-terminal fade-up">ACCESSING_MAINFRAME</div>
+            <h1 class="cyber-glitch-0 fade-up stagger-1" data-text="RECEP YILDIZ">RECEP YILDIZ</h1>
+            <p style="color: var(--text-dim); margin: 2rem 0; font-size: 1.2rem; max-width: 600px;" class="fade-up stagger-2">
+                Siber Güvenlik Stajyer Adayı & Yazılım Geliştirici. Ağ güvenliği, zafiyet tespiti ve modern yazılım mimarileri üzerine sistemler inşa ediyorum.
+            </p>
+            <div class="fade-up stagger-3" style="display: flex; gap: 2rem;">
+                <a href="#projects" class="cyber-btn magnetic">Bypass_Security</a>
+                <a href="#contact" class="cyber-btn magnetic" style="border-color: var(--core-magenta); color: var(--text-main);">Ping_Me</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 2: ABOUT / TERMINAL -->
+    <section id="about" class="section">
+        <div class="section-marker fade-up">01_CORE_PROCESSES</div>
+        <div class="valign">
+            <div class="half-width fade-up stagger-1">
+                <h2 style="font-size: 3rem; margin-bottom: 1.5rem;">Zafiyetleri Bul,<br><span style="color: var(--core-cyan);">Sistemi Güçlendir.</span></h2>
+                <p style="color: var(--text-dim); font-size: 1.1rem; line-height: 1.8;">
+                    11. Sınıf Bilişim Teknolojileri bölümü öğrencisiyim. Teorik bilgiyi pratikle birleştirerek C#, Python, Flutter ve IoT alanlarında projeler geliştiriyorum. Gerçek dünyadaki tehdit senaryolarına karşı savunma stratejileri geliştirmek en büyük tutkum.
+                </p>
+            </div>
+            <div class="half-width fade-up stagger-2">
+                <div class="terminal-window magnetic-tilt">
+                    <div class="terminal-header">
+                        <div class="terminal-btn t-red"></div>
+                        <div class="terminal-btn t-yel"></div>
+                        <div class="terminal-btn t-grn"></div>
+                    </div>
+                    <div class="terminal-body">
+                        <span class="t-path">recep@mainframe:~$</span> <span class="t-cmd">cat profile.json</span><br>
+                        <span class="t-out">{</span><br>
+                        <span class="t-out">&nbsp;&nbsp;"Status": "11. Sınıf Yazılım Öğrencisi",</span><br>
+                        <span class="t-out">&nbsp;&nbsp;"Focus": ["Siber Güvenlik", "Ağ Analizi", "Gömülü Sistemler"],</span><br>
+                        <span class="t-out">&nbsp;&nbsp;"Target": "Güvenli Mimari Geliştirmek"</span><br>
+                        <span class="t-out">}</span><br>
+                        <span class="t-path">recep@mainframe:~$</span> <span class="t-cmd cursor-blink">_</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3: SKILLS -->
+    <section id="skills" class="section">
+        <div class="section-marker fade-up">02_CAPABILITIES</div>
+        <h2 style="font-size: 3rem; margin-bottom: 3rem;" class="fade-up">Teknik <span style="color: var(--core-cyan);">Cephanelik</span></h2>
+        
+        <div class="grid-wrap">
+            <div class="cyber-card fade-up stagger-1 tilt-card">
+                <i class="fas fa-shield-halved card-icon"></i>
+                <h3>Sistem & Güvenlik</h3>
+                <ul>
+                    <li>Kali Linux Operasyonları</li>
+                    <li>Wireshark Ağ Analizi</li>
+                    <li>Nmap Tarama & Zafiyet Tespiti</li>
+                    <li>TryHackMe / HackTheBox Pratiği</li>
+                </ul>
+            </div>
+            
+            <div class="cyber-card fade-up stagger-2 tilt-card">
+                <i class="fas fa-code card-icon"></i>
+                <h3>Yazılım & Uygulama</h3>
+                <ul>
+                    <li>C# Masaüstü Gömülü Sistemler</li>
+                    <li>Python Scripting & Otomasyon</li>
+                    <li>Flutter & Dart Mobil Çözümler</li>
+                    <li>Güvenli Kod Yazım Prensipleri</li>
+                </ul>
+            </div>
+            
+            <div class="cyber-card fade-up stagger-3 tilt-card">
+                <i class="fas fa-microchip card-icon"></i>
+                <h3>Donanım & IoT</h3>
+                <ul>
+                    <li>Arduino & ESP8266/ESP32 Üzerine Sistemler</li>
+                    <li>Akıllı Saksı & Otomasyon Projeleri</li>
+                    <li>3D Yazıcı Donanım Optimizasyonu (Klipper)</li>
+                    <li>Fusion 360 Temel Modelleme</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 4: PROJECTS -->
+    <section id="projects" class="section">
+        <div class="section-marker fade-up">03_PROJECT_MATRIX</div>
+        <h2 style="font-size: 3rem; margin-bottom: 3rem;" class="fade-up">Operasyon <span style="color: var(--core-cyan);">Kayıtları</span></h2>
+        
+        <div class="valign" style="margin-bottom: 4rem;">
+            <div class="half-width fade-up tilt-card">
+                <div class="terminal-window" style="padding: 2rem;">
+                    <h3 style="color: var(--core-cyan); margin-bottom: 1rem;"><i class="fas fa-network-wired"></i> Siber Güvenlik Laboratuvarı</h3>
+                    <p style="color: var(--text-dim);">Kişisel laboratuvar ortamında Kali Linux ve Nmap kullanılarak gerçekleştirilen ağ tarama testleri. Zafiyet tespiti, protokol analizi ve savunma mekanizmalarının geliştirilmesi.</p>
+                </div>
+            </div>
+            <div class="half-width fade-up stagger-1 tilt-card">
+                <div class="terminal-window" style="padding: 2rem; border-color: var(--core-magenta);">
+                    <h3 style="color: var(--core-magenta); margin-bottom: 1rem;"><i class="fas fa-leaf"></i> Güvenli IoT & Akıllı Saksı</h3>
+                    <p style="color: var(--text-dim);">ESP ve sensörler ile veri toplayan IoT ekosistemi. Veri iletişim güvenliği sağlanmış mimari. MEB Robot ve TÜBİTAK projelerinde sergilenmiş teorik/pratik altyapı.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="valign">
+             <div class="half-width fade-up tilt-card">
+                <div class="terminal-window" style="padding: 2rem;">
+                    <h3 style="color: #ffbd2e; margin-bottom: 1rem;"><i class="fas fa-certificate"></i> Yetkinlik Belgeleri</h3>
+                    <div style="display: flex; flex-direction: column; gap: 1rem;">
+                        <div style="background: rgba(255,255,255,0.05); padding: 1rem; border-left: 2px solid #ffbd2e;">
+                            <strong style="color: #fff;">Siber Güvenliğe Giriş</strong> - BTK Akademi (05.12.2024)
+                        </div>
+                        <div style="background: rgba(255,255,255,0.05); padding: 1rem; border-left: 2px solid #ffbd2e;">
+                            <strong style="color: #fff;">Sosyal Mühendislik ve Oltalama</strong> - BTK Akademi (28.02.2025)
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="half-width fade-up stagger-1 tilt-card">
+                <div class="terminal-window" style="padding: 2rem;">
+                    <h3 style="color: #27c93f; margin-bottom: 1rem;"><i class="fas fa-mobile-screen"></i> Mobil Yazılım Geliştirme</h3>
+                    <p style="color: var(--text-dim);">Güvenli API haberleşmesi ve yapay zeka destekli altyapılara sahip, kullanıcı verilerinin güvenle işlendiği Flutter tabanlı mobil uygulamalar.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 5: CONTACT -->
+    <section id="contact" class="section">
+        <div class="section-marker fade-up">04_ESTABLISH_CONNECTION</div>
+        <div style="text-align: center;" class="fade-up">
+            <h2 style="font-size: 4rem; margin-bottom: 1rem;">Ağıma <span style="color: var(--core-cyan);">Katıl.</span></h2>
+            <p style="color: var(--text-dim); max-width: 500px; margin: 0 auto 3rem;">Hackathon'lar, staj süreçleri veya güvenlik odaklı yeni projeler için benimle iletişime geçebilirsin.</p>
+            
+            <a href="mailto:r.recepyildiz@outlook.com" class="cyber-btn magnetic" style="font-size: 1.2rem; padding: 1.5rem 4rem;">INIT_CONTACT_PROTOCOL</a>
+            
+            <div class="social-links" style="justify-content: center;">
+                <a href="https://github.com" target="_blank" class="magnetic"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com" target="_blank" class="magnetic"><i class="fab fa-linkedin"></i></a>
+                <a href="https://tryhackme.com" target="_blank" class="magnetic"><i class="fas fa-bug"></i></a>
+                <a href="tel:+905075341458" class="magnetic"><i class="fas fa-phone"></i></a>
+            </div>
+        </div>
+        
+        <div style="position: absolute; bottom: 2rem; left: 15%; right: 15%; display: flex; justify-content: space-between; font-family: var(--font-code); color: var(--text-dim); font-size: 0.8rem; border-top: 1px solid var(--glass-border); padding-top: 1rem;">
+            <span>SYS_VERSION: 1.0.1.BETA</span>
+            <span>DATA_SECURE: TRUE</span>
+            <span>&copy; RECEP YILDIZ // 2026</span>
+        </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
