@@ -1,3 +1,105 @@
+// --- LOCALIZATION (i18n) ---
+const translations = {
+    en: {
+        loader_init: "Initializing System...",
+        hero_subtitle: "ACCESSING_MAINFRAME",
+        hero_desc: "Cybersecurity Intern Candidate & Software Developer. I build systems focused on network security, vulnerability assessment, and modern software architectures.",
+        about_heading: "Find Vulnerabilities,<br><span style='color: var(--core-cyan);'>Strengthen the System.</span>",
+        about_desc: "I am an 11th-grade Information Technologies student. I combine theoretical knowledge with practice to develop projects in C#, Python, Flutter, and IoT. My greatest passion is developing defense strategies against real-world threat scenarios.",
+        term_status: "11th Grade Software Student",
+        term_f1: "Cybersecurity",
+        term_f2: "Network Analysis",
+        term_f3: "Embedded Systems",
+        term_target: "Developing Secure Architectures",
+        skills_heading: "Technical <span style='color: var(--core-cyan);'>Arsenal</span>",
+        sk1_title: "System & Security",
+        sk1_1: "Kali Linux Operations",
+        sk1_2: "Wireshark Network Analysis",
+        sk1_3: "Nmap Scanning & Vulnerability Detection",
+        sk2_title: "Software & Application",
+        sk2_1: "C# Desktop Applications",
+        sk2_2: "Python Scripting & Automation",
+        sk2_3: "Flutter & Dart Mobile Solutions",
+        sk2_4: "Secure Coding Principles",
+        sk3_title: "Hardware & IoT",
+        sk3_1: "Systems based on Arduino & ESP",
+        sk3_2: "Smart Planter & Automation Projects",
+        sk3_3: "3D Printer Hardware Optimization (Klipper)",
+        sk3_4: "Fusion 360 Basic Modeling",
+        proj_heading: "Operation <span style='color: var(--core-cyan);'>Logs</span>",
+        p1_title: "Cybersecurity Laboratory",
+        p1_desc: "Network scanning tests conducted using Kali Linux and Nmap in a personal laboratory environment. Vulnerability detection, protocol analysis, and development of defense mechanisms.",
+        p2_title: "Secure IoT & Smart Planter",
+        p2_desc: "IoT ecosystem collecting data via ESP and sensors. Architecture with secure data communication. Theoretical/practical infrastructure exhibited in MEB Robot and TUBITAK projects.",
+        p3_title: "Certifications",
+        p3_1: "Introduction to Cybersecurity",
+        p3_2: "Social Engineering and Phishing",
+        p4_title: "Mobile Software Development",
+        p4_desc: "Flutter-based mobile applications with secure API communication and AI-supported infrastructures, where user data is processed securely.",
+        contact_heading: "Join My <span style='color: var(--core-cyan);'>Network.</span>",
+        contact_desc: "You can contact me for hackathons, internship opportunities, or new security-focused projects."
+    },
+    tr: {
+        loader_init: "Sistem Başlatılıyor...",
+        hero_subtitle: "ANA_SİSTEME_ERİŞİLİYOR",
+        hero_desc: "Siber Güvenlik Stajyer Adayı & Yazılım Geliştirici. Ağ güvenliği, zafiyet tespiti ve modern yazılım mimarileri üzerine sistemler inşa ediyorum.",
+        about_heading: "Zafiyetleri Bul,<br><span style='color: var(--core-cyan);'>Sistemi Güçlendir.</span>",
+        about_desc: "11. Sınıf Bilişim Teknolojileri bölümü öğrencisiyim. Teorik bilgiyi pratikle birleştirerek C#, Python, Flutter ve IoT alanlarında projeler geliştiriyorum. Gerçek dünyadaki tehdit senaryolarına karşı savunma stratejileri geliştirmek en büyük tutkum.",
+        term_status: "11. Sınıf Yazılım Öğrencisi",
+        term_f1: "Siber Güvenlik",
+        term_f2: "Ağ Analizi",
+        term_f3: "Gömülü Sistemler",
+        term_target: "Güvenli Mimari Geliştirmek",
+        skills_heading: "Teknik <span style='color: var(--core-cyan);'>Cephanelik</span>",
+        sk1_title: "Sistem & Güvenlik",
+        sk1_1: "Kali Linux Operasyonları",
+        sk1_2: "Wireshark Ağ Analizi",
+        sk1_3: "Nmap Tarama & Zafiyet Tespiti",
+        sk2_title: "Yazılım & Uygulama",
+        sk2_1: "C# Masaüstü Gömülü Sistemler",
+        sk2_2: "Python Scripting & Otomasyon",
+        sk2_3: "Flutter & Dart Mobil Çözümler",
+        sk2_4: "Güvenli Kod Yazım Prensipleri",
+        sk3_title: "Donanım & IoT",
+        sk3_1: "Arduino & ESP8266/ESP32 Üzerine Sistemler",
+        sk3_2: "Akıllı Saksı & Otomasyon Projeleri",
+        sk3_3: "3D Yazıcı Donanım Optimizasyonu (Klipper)",
+        sk3_4: "Fusion 360 Temel Modelleme",
+        proj_heading: "Operasyon <span style='color: var(--core-cyan);'>Kayıtları</span>",
+        p1_title: "Siber Güvenlik Laboratuvarı",
+        p1_desc: "Kişisel laboratuvar ortamında Kali Linux ve Nmap kullanılarak gerçekleştirilen ağ tarama testleri. Zafiyet tespiti, protokol analizi ve savunma mekanizmalarının geliştirilmesi.",
+        p2_title: "Güvenli IoT & Akıllı Saksı",
+        p2_desc: "ESP ve sensörler ile veri toplayan IoT ekosistemi. Veri iletişim güvenliği sağlanmış mimari. MEB Robot ve TÜBİTAK projelerinde sergilenmiş teorik/pratik altyapı.",
+        p3_title: "Yetkinlik Belgeleri",
+        p3_1: "Siber Güvenliğe Giriş",
+        p3_2: "Sosyal Mühendislik ve Oltalama",
+        p4_title: "Mobil Yazılım Geliştirme",
+        p4_desc: "Güvenli API haberleşmesi ve yapay zeka destekli altyapılara sahip, kullanıcı verilerinin güvenle işlendiği Flutter tabanlı mobil uygulamalar.",
+        contact_heading: "Ağıma <span style='color: var(--core-cyan);'>Katıl.</span>",
+        contact_desc: "Hackathon'lar, staj süreçleri veya güvenlik odaklı yeni projeler için benimle iletişime geçebilirsin."
+    }
+};
+
+let currentLang = 'en';
+
+function toggleLanguage() {
+    currentLang = currentLang === 'en' ? 'tr' : 'en';
+    const switchBtn = document.getElementById('lang-switch');
+    switchBtn.innerText = currentLang === 'en' ? 'TR' : 'EN';
+    
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        if(translations[currentLang][key]) {
+            el.innerHTML = translations[currentLang][key]; // innerHTML is needed for the <br> and <span> tags
+        }
+    });
+
+    // Update glitch text attribute specially
+    const glitchEl = document.querySelector('.cyber-glitch-0');
+    // Name doesn't change, but ensuring we know where to intercept if we need special attributes
+}
+
+
 // --- PRELOADER SEQUENCE ---
 document.addEventListener("DOMContentLoaded", () => {
     let progress = 0;
